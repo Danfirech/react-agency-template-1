@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Man from "../images/man-ipad.png";
+import MiniCard from "./MiniCard";
 
 const Container = styled.div`
   display: flex;
@@ -32,7 +33,7 @@ const Description = styled.p`
   color: 555;
 `;
 
-const CartContainer = styled.div`
+const CardContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
@@ -52,7 +53,11 @@ export const Service = () => {
             businesses looking for a partner to design and develop lead
             generation and beutiful websites.
           </Description>
-          <CartContainer></CartContainer>
+          <CardContainer>
+            <MiniCard>Let us show you!</MiniCard>
+            <MiniCard>Let us show you!</MiniCard>
+            <MiniCard>Let us show you!</MiniCard>
+          </CardContainer>
         </Wrapper>
       </Right>
     </Container>
