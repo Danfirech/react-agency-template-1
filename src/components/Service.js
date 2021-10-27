@@ -39,6 +39,16 @@ const CardContainer = styled.div`
   margin-top: 50px;
 `;
 
+const Button = styled.button`
+  width: 180px;
+  border: none;
+  border-radius: 10px;
+  background-color: darkblue;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+`;
+
 export const Service = () => {
   return (
     <Container>
@@ -54,9 +64,9 @@ export const Service = () => {
             generation and beutiful websites.
           </Description>
           <CardContainer>
-            <MiniCard>Let us show you!</MiniCard>
-            <MiniCard>Let us show you!</MiniCard>
-            <MiniCard>Let us show you!</MiniCard>
+            <MiniCard />
+            <MiniCard />
+            <MiniCard />
           </CardContainer>
         </Wrapper>
       </Right>
