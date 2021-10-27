@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Woman from "../images/Woman.png";
 
 const Container = styled.div`
   height: calc(100vh - 50px);
@@ -62,6 +63,13 @@ const Right = styled.div`
   right: 40%;
 `;
 
+const Image = styled.img`
+  width: 100%;
+  padding-left: 65px;
+  padding-top: 50px;
+  clip-path: polygon(51% 0, 80% 0, 81% 53%, 82% 100%, 21% 100%, 20% 11%);
+`;
+
 const Intro = () => {
   return (
     <Container>
@@ -69,7 +77,7 @@ const Intro = () => {
         <Title>Adventures in creative age</Title>
         <Desc>
           We believe that createing and designing products and services in close
-          partnership with our clients is the only way to have areal impact on
+          partnership with our clients is the only way to have a real impact on
           their buisness{" "}
         </Desc>
         <Info>
@@ -81,7 +89,9 @@ const Intro = () => {
           </Contact>
         </Info>
       </Left>
-      <Right>R</Right>
+      <Right>
+        <Image src={Woman} />
+      </Right>
     </Container>
   );
 };
