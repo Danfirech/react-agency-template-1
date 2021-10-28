@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Man from "../images/man-ipad.png";
 import MiniCard from "./MiniCard";
+import Icon from "../images/play.png";
 
 const Container = styled.div`
   display: flex;
+  height: 100%;
 `;
 
 const Left = styled.div`
@@ -12,6 +14,7 @@ const Left = styled.div`
 `;
 
 const Image = styled.img`
+  display: ${(props) => props.open && "none"};
   height: 100%;
   margin-left: 100px;
 `;
@@ -47,13 +50,24 @@ const Button = styled.button`
   color: white;
   font-size: 20px;
   padding: 15px;
+  margin-top: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+`;
+
+const Icon1 = styled.img`
+  width: 20px;
+  margin-right: 10px;
 `;
 
 export const Service = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <Container>
       <Left>
-        <Image src={Man} />
+        <Image open={open} src={Man} />
       </Left>
       <Right>
         <Wrapper>
@@ -68,6 +82,10 @@ export const Service = () => {
             <MiniCard />
             <MiniCard />
           </CardContainer>
+          <Button onClick={() => setOpen(true)}>
+            <Icon1 src={Icon} />
+            How it Works
+          </Button>
         </Wrapper>
       </Right>
     </Container>

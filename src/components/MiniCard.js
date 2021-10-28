@@ -8,7 +8,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   -webkit-box-shadow: 16px 16px 8px 4px #000000;
-  box-shadow: 16px 16px 8px 4px #000000;
+  box-shadow: 3px 3px 3px 3px gray;
   align-items: center;
 `;
 
