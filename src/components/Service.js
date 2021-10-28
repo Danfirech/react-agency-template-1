@@ -11,12 +11,24 @@ const Container = styled.div`
 
 const Left = styled.div`
   width: 50%;
+  position: relative;
 `;
 
 const Image = styled.img`
   display: ${(props) => props.open && "none"};
   height: 100%;
   margin-left: 100px;
+`;
+
+const Video = styled.video`
+  display: ${(props) => !props.open && "none"};
+  height: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  left: 0;
 `;
 
 const Right = styled.div`
@@ -68,6 +80,13 @@ export const Service = () => {
     <Container>
       <Left>
         <Image open={open} src={Man} />
+        <Video
+          autoPlay
+          loop
+          controls
+          open={open}
+          src="https://player.vimeo.com/external/420568727.sd.mp4?s=bd4d6b75a5a1c960a222d3c9923574f70d122e0c&profile_id=165&oauth2_token_id=57447761"
+        />
       </Left>
       <Right>
         <Wrapper>

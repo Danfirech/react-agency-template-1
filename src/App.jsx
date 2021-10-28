@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar.js";
 import Intro from "./components/Intro.js";
 import Feature from "./components/Feature.js";
 import Service from "./components/Service.js";
+import Price from "./components/Price.js";
 
 const Container = styled.div`
   height: 100vh;
@@ -54,6 +55,9 @@ const App = () => {
       <Container>
         <Service />
         <ServiceShape />
+      </Container>
+      <Container>
+        <Price />
       </Container>
     </>
   );
