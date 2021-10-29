@@ -72,6 +72,14 @@ const Button = styled.button`
 
 const AddressContainer = styled.div`
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const AddressItem = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 export const Contact = () => {
