@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Man from "../images/man-ipad.png";
+import Man from "../images/Black-suite-man.png";
 import MiniCard from "./MiniCard";
 import Icon from "../images/play.png";
 

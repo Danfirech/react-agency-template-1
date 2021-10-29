@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import HandPhone from "../images/Hand-holding-phone.png";
+import HandPhone from "../images/Iphone-nobackground-png.png";
 import AnimatedShapes from "./AnimatedShapes.js";
 
 const Container = styled.div`

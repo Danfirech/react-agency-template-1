@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Woman from "../images/Woman.png";
+import ManPink from "../images/Man-pinksuit.png";
 import AnimatedShapes from "./AnimatedShapes";
 
 const Container = styled.div`
@@ -65,10 +65,9 @@ const Right = styled.div`
 `;
 
 const Image = styled.img`
-  width: 100%;
-  padding-left: 65px;
+  width: 40%;
+  padding-left: 155px;
   padding-top: 50px;
-  clip-path: polygon(51% 0, 80% 0, 81% 53%, 82% 100%, 21% 100%, 20% 11%);
 `;
 
 const Intro = () => {
@@ -91,7 +90,7 @@ const Intro = () => {
         </Info>
       </Left>
       <Right>
-        <Image src={Woman} />
+        <Image src={ManPink} />
       </Right>
       <AnimatedShapes />
     </Container>
