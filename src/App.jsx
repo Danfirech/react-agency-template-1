@@ -4,6 +4,8 @@ import Intro from "./components/Intro.js";
 import Feature from "./components/Feature.js";
 import Service from "./components/Service.js";
 import Price from "./components/Price.js";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
 const Container = styled.div`
   height: 100vh;
@@ -40,6 +42,13 @@ const ServiceShape = styled.div`
   z-index: -1;
 `;
 
+const PriceShape = styled.div`
+  ${Shape}
+  clip-path: polygon(0 0, 33% 0%, 33% 100%, 55% 100%);
+  background-color: crimson;
+  z-index: -1;
+`;
+
 const App = () => {
   return (
     <>
@@ -58,6 +67,11 @@ const App = () => {
       </Container>
       <Container>
         <Price />
+        <PriceShape />
+      </Container>
+      <Container>
+        <Contact />
+        <Footer />
       </Container>
     </>
   );
