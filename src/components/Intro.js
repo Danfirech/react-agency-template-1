@@ -90,7 +90,7 @@ const Intro = () => {
         </Info>
       </Left>
       <Right>
-        <Image src={ManPink} />
+        <Image />
       </Right>
       <AnimatedShapes />
     </Container>
