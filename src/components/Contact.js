@@ -80,6 +80,17 @@ const AddressContainer = styled.div`
 const AddressItem = styled.div`
   display: flex;
   align-items: center;
+  margin-bottom: 50px;
+`;
+
+const Icon = styled.img`
+  width: 20px;
+  margin-right: 15px;
+`;
+
+const Text = styled.span`
+  font-size: 20px;
+  margin-right: 50px;
 `;
 
 export const Contact = () => {
@@ -104,7 +115,20 @@ export const Contact = () => {
             </RightForm>
           </Form>
         </FormContainer>
-        <AddressContainer></AddressContainer>
+        <AddressContainer>
+          <AddressItem>
+            <Icon src={Map} />
+            <Text>123 Sloan st, Denver, CO</Text>
+          </AddressItem>
+          <AddressItem>
+            <Icon src={Phone} />
+            <Text>547-324-6501</Text>
+          </AddressItem>
+          <AddressItem>
+            <Icon src={Send} />
+            <Text>Contact@nddesign.org</Text>
+          </AddressItem>
+        </AddressContainer>
       </Wrapper>
     </Container>
   );
