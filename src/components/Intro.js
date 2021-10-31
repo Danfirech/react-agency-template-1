@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ManPink from "../images/Man-pinksuit.png";
+import Beach from "../images/Beach.jpeg";
 import AnimatedShapes from "./AnimatedShapes";
 
 const Container = styled.div`
@@ -67,7 +67,7 @@ const Right = styled.div`
 const Image = styled.img`
   width: 40%;
   padding-left: 155px;
-  padding-top: 50px;
+  padding-top: 280px;
 `;
 
 const Intro = () => {
@@ -90,7 +90,7 @@ const Intro = () => {
         </Info>
       </Left>
       <Right>
-        <Image />
+        <Image src={Beach} />
       </Right>
       <AnimatedShapes />
     </Container>
